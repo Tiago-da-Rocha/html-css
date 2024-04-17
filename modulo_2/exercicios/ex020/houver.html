@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Hover</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, lightgray, gray, rgba(0, 0, 0, 0.786));
+            background-attachment: fixed;
+            font: italic 500 25px Arial, Helvetica, sans-serif;
+            color: rgb(125, 77, 19);
+        }
+
+        h1 {
+            color: rgb(143, 99, 44);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.786);
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.705);
+            width: 250px;
+        }
+
+        div:hover {
+            color: rgb(255, 140, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos De Hover</h1>
+    <br>
+    <p>
+        Passe o mouse na frase abaixo: &#x2193
+    </p>
+    
+    <div>
+        <ins>Passe o mouse aqui!</ins>
+        <p>Texto Escondido... &#x1F47B</p>
+    </div>
+
+    <p>
+        Fim da interação.
+    </p>
+</body>
+</html>

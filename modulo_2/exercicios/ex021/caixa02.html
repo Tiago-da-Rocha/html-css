@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 230);
+            font: normal 500 20px Arial;
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(238, 238, 203);
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+
+        main {
+            background-image: linear-gradient(to bottom, white, rgb(208, 208, 208));
+            padding: 8px;
+            border-radius: 10px;
+            width: 800px;
+            height: auto;
+            margin: auto;
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.321);
+        }
+
+        section > article {
+            background-color: rgb(255, 255, 230);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 10px rgba(40, 40, 40, 0.358);
+            border-radius: 60px 0px;
+        }
+
+        footer {
+            background-color: rgb(41, 41, 41);
+            color: rgb(218, 238, 255);
+            padding: 5px;
+            margin-top: 30px;
+        }
+
+        footer > p {
+            text-align: center;
+            margin: 0px;
+        }
+
+        nav {
+            background-color: rgb(164, 164, 112);
+            padding: 3px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgba(42, 42, 42, 0.519);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-left: 50px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-size: 30px;
+            color: rgb(108, 178, 203);
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.366);
+        }
+
+        article > p {
+            text-indent: 20px;
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grouping Tags</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit aliquam repellat modi odit dolorem quidem nihil veniam ipsa possimus vitae cupiditate quisquam soluta, quo labore quibusdam reiciendis cumque enim!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, ipsum placeat. Laborum, ut? Ut, cumque? Enim esse molestiae quo perferendis, modi consectetur unde consequatur dolores quis adipisci, suscipit, ullam aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem nihil ipsa architecto voluptatem et nostrum id sunt sequi qui. Modi deleniti velit incidunt laboriosam numquam dicta provident unde at.</p>
+                <aside>Artigo escrito por <strong>José da Silva.</strong></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Tiago da Rocha.</p>
+    </footer>
+</body>
+</html>

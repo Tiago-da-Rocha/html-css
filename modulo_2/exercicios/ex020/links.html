@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        Aprendizados: Seletores Personalizados
+
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = children
+        */
+        body {
+            background-image: linear-gradient(to bottom, rgba(252, 216, 155, 0.636), rgba(0, 0, 0, 0.91));
+            background-attachment: fixed;
+            font: 600 23px Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-style: italic;
+            color: rgb(85, 139, 141);
+            text-decoration: none;
+        }
+
+        a:hover {
+            display: inline;
+            color: rgb(146, 251, 255);
+            text-decoration: underline;
+            font-size: 35px;
+            background-color: rgba(0, 0, 0, 0.388);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        a:visited {
+            color: rgb(128, 8, 30);
+            
+        }
+
+        a:active {
+            color: rgb(146, 251, 255)
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+
+        <ul type="square">
+            <li>Direcionamento para o <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a></li>
+            <br>
+            <li>Direcionamento para o <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" rel="external">Facebook</a></li>
+            <br>
+            <li>Direcionamento para o <a href="https://www.omelete.com.br/" target="_blank" rel="external">OmeleteTv</a></li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa</title>
+    <style>
+        body {
+            background-color: rgb(166, 150, 131);
+            font: 500 18px Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            /*
+            h1 - type: box-level
+            */
+
+
+            color: rgb(0, 0, 0);
+            background-color: rgb(110, 110, 84);
+            height: 25px;
+            width: 540px;
+
+            /*
+            border-width: 50px;
+            border-style: solid;
+            border-color: rgb(175, 175, 158);
+            */
+            border: 50px solid rgb(175, 175, 158);
+
+            /*
+            padding-top: 40px;
+            padding-right: 20px;
+            padding-bottom: 1px;
+            padding-left: 20px;
+            */
+            padding: 20px 20px 1px 20px;
+            
+            /*
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            */
+            margin: 10px auto 30px auto;
+
+            outline-width: 5px;
+            outline-color: black;
+            outline-style: dashed;
+        }
+
+        strong {
+            /*
+            strong - type: inline-level
+            */
+
+
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(67, 50, 25);
+            padding-right: 2px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos De Caixas Box-Level</h1>
+    <p><em>Parágrafos também são exemplos de <strong>box-level</strong> , mas os <a href="#">links são exemplos de caixas inline level</a>. Vamos ver como tudo isso funciona.</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi est molestias tempore dolor repellendus voluptatibus et voluptatem perferendis facere fugiat quibusdam, modi eos possimus temporibus perspiciatis voluptas fuga, veniam libero!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quia id vero possimus perspiciatis molestiae ea fuga harum minima labore omnis culpa, doloremque fugit saepe dolores, architecto, velit explicabo voluptas! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quo perspiciatis a rerum beatae quae! Error perspiciatis rem voluptatem quaerat voluptas quae. Laudantium repellat, numquam mollitia ea eum similique voluptas!</p>
+</body>
+</html>

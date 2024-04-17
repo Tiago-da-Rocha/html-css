@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinca Aí!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="cse">Brinca Aí!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quaerat quisquam earum? Facere nemo neque quas reiciendis expedita delectus, perspiciatis temporibus nam distinctio quia, modi animi nihil dolores optio doloremque?</p>
+    <p>Se você mover o seu mouse para esse botão abaixo, automaticamente o site ficará completamente escuro, preto, totalmente negro. </p>
+    <h2>TENTE!</h2>
+    <div><input type="button" id="esc" value="Clique" onclick="escurecer()"></div>
+    
+    <script>
+        var esc = window.document.getElementById('esc')
+        var cse = window.document.getElementById('cse')
+        function escurecer() {
+            document.body.style.background = '#000000' 
+            esc.style.display = 'none'
+            cse.innerHTML = 'Brabo né!?'
+        }
+    </script>
+</body>
+</html>
