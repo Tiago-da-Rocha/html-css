@@ -13,7 +13,7 @@
 
 body {
     font: normal 500 16px Verdana;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     background-image: url('imagens/background001.jpg');
     background-repeat: repeat;
@@ -27,15 +27,19 @@ body {
 header {
     background-color: black;
     text-align: center;
-    padding: 50px;
-    width: 100%;
 }
 
 /* Fonte da Cabeça do Site */
 
 header > h1 {
-    font: normal bold 106px 'Passion One';
-    
+    font: normal bold 153px 'Passion One';
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    padding-bottom: 50px;
 }
 
 header a {
@@ -49,24 +53,25 @@ header a:hover {
     text-decoration: underline;
 }
 
-header strong {
-    font-size: 153px;
-}
-
 /* Conteúdo do Site */
 
 section {
     color: black;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+
 }
 
 section.claro {
     background-color: white;
-    padding: 70px 0px 170px 30px;
-    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.444);
 }
 
 section.escuro {
-    padding: 70px 30px 70px 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.444);
 }
 
 section div.espaço {
@@ -75,9 +80,9 @@ section div.espaço {
 
 /* Fonte do Conteúdo do Site */
 
-section p {
-    font: normal lighter 53px 'Sriracha';
-    line-height: 108px;
+section > p {
+    font-family: "Sriracha", cursive;
+    
 }
 
 section > p.branco {
@@ -88,8 +93,10 @@ section > p.branco {
 section > p.preto {
     background-color: rgba(10, 10, 10, 0.533);
     color: white;
-    max-width: 617px;
+    display: inline-block;
     padding: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.444);
+
 }
 
 /* Imagem no Conteúdo do Site */
