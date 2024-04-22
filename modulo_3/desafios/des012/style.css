@@ -15,11 +15,6 @@ body {
     font: normal 500 16px Verdana;
     min-height: 100vh;
     color: white;
-    background-image: url('imagens/background001.jpg');
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* Cabeça do Site */
@@ -74,15 +69,11 @@ section.escuro {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.444);
 }
 
-section div.espaço {
-    padding: 50px;
-}
-
 /* Fonte do Conteúdo do Site */
 
 section > p {
     font-family: "Sriracha", cursive;
-    
+    padding-bottom: 2em;
 }
 
 section > p.branco {
@@ -96,18 +87,25 @@ section > p.preto {
     display: inline-block;
     padding: 5px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.444);
-
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
 /* Imagem no Conteúdo do Site */
 
-section#img {
-    background: black url('imagens/background002.jpg') center center repeat fixed;
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.523);
 }
 
-section#img > p {
-    max-width: 630px;
+section#img02 {
+    background-image: url('imagens/background002.jpg'); 
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.523);
 }
 
 /* Rodapé do Site */
