@@ -9,15 +9,32 @@
             font: italic 500 18px Arial;
             text-align: center;
         }
+
+        iframe {
+            border: 2px solid black;
+            height: 300px;
+        }
     </style>
 </head>
 <body>
-    <h1>Testando o uso de um iframe</h1>
-    <p>Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+    <!--
+        Tamanho Padrão de um Iframe
+        300x150
+    -->
 
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
         </iframe> 
-        para aprender a programar.</p>
-    <p>O site do <iframe src="https://www.google.com" frameborder="0"></iframe> é muito legal.</p>
+        para aprender a programar.
+    </p>
+    <p>
+        O repositório do 
+        <iframe src="https://tiago-da-rocha.github.io/Calistenizando/" frameborder="0">
+            <a href="https://tiago-da-rocha.github.io/Calistenizando/">gustavoguanabara.gihub.io</a>
+        </iframe> também é muito legal!
+    </p>
 </body>
 </html>
