@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font: italic 500 18px Arial;
+        }
+
+        iframe {
+            border: 1px solid black;
+            width: 95vw;
+            height: 400px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.434);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça Uma Escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda vitae neque in. Eaque delectus necessitatibus natus error iste consequatur, odio explicabo facilis aliquid cumque, accusamus odit est impedit quas.</p>
+
+    <h2>Links:</h2>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Página 001</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Página 002</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Página 003</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam expedita dolores doloremque laudantium eum iste, inventore facilis perspiciatis? Possimus omnis accusamus quo nostrum? Tempore labore aut nostrum illo tempora.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Faça uma escolha acima!</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, quam, quasi laudantium porro eaque provident, pariatur quaerat perferendis possimus nesciunt inventore quia at saepe alias beatae rerum culpa amet veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio explicabo earum obcaecati labore quidem voluptates modi dolores nostrum distinctio. Dicta et eum fuga amet magni aliquam laboriosam totam ullam?</p><p>Só assim os comandos retornarão algo diferente.</p>">
+        <p>Seu navegador não é compatível.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint maxime eos, iure minus ratione, quaerat qui quasi, veniam sit itaque ea suscipit corporis nesciunt mollitia ullam doloremque nulla illo a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iure obcaecati explicabo est voluptate excepturi tempora animi modi quibusdam eum, dignissimos temporibus, neque maiores vel repellendus eos aliquam soluta hic!</p>
+</body>
+</html>
