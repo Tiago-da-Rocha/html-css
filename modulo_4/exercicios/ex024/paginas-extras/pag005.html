@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font: italic 500 15px Arial;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(114, 0, 221);
+        }
+
+        a:hover {
+            color: blueviolet;
+            text-decoration: underline;
+            font-size: 35px;
+            text-shadow: 1px 1px 5px cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="#" onclick="clicar()"> > Clique Aqui < </a></h1>
+    <div id="saida"></div>
+
+    <script>
+        function clicar() {
+            var s = document.getElementById("saida")
+            s.innerHTML += "<p>Você Clicou!</p>"
+        }
+    </script>
+</body>
+</html>
