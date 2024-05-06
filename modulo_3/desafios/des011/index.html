@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço</title>
     <style>
-        body {
-            background-color: antiquewhite;
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main#container {
             background-image: url('imagens/espaco.jpg');
-            background-attachment: fixed;
+            background-color: antiquewhite;
             background-position: center center;
-            background-size: cover;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
             position: relative;
         }
 
@@ -23,13 +30,15 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, 40%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <section id="conteudo">
-
-    </section>
+    <main id="container">
+        <section id="conteudo">
+            
+        </section>
+    </main>
 </body>
 </html>
