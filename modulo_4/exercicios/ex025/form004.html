@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 004</title>
+    <style>
+        body {
+            font: normal 500 18px monospace;
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form {
+            margin: auto;
+        }
+
+        form fieldset {
+            max-width: 500px;
+            margin: auto;
+            background-color: white;
+        }
+
+        #foot {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" autocomplete="on" method="POST">
+        <fieldset>
+            <legend><strong>Dados Pessoais</strong></legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" placeholder="Digite o nome completo" required autofocus autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-Mail: </label>
+                <input type="email" name="email" id="iemail" placeholder="ex: @gmail.com" required autocomplete="email">
+            </p>
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="Digite sua senha" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" placeholder="ex: (00) 00000 - 0000" required autocomplete="tel" >
+                <!--pattern="^\(\d{2}\)\d{4,5}-\d{4}%"-->
+                <!-- Estudar mais sobre RegEx -->
+            </p>
+        </fieldset>
+        <p id="foot">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
