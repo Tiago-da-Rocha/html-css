@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font: normal 500 18px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ivol">Volume: </label>
+            <input type="range" name="vol" id="ivol" min="0" max="10" value="0" oninput="resvol.innerHTML = Number(ivol.value)">
+            <output id="resvol">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
