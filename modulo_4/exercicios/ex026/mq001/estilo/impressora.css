@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Estilo da Impressora */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+
+menu {
+    display: none;
+}
+
+p {
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+article::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: "Site feito por Tiago da Rocha para o Curso em Vídeo.";
+    width: 100%;
+}
