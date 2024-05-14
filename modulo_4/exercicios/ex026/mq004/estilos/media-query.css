@@ -17,9 +17,6 @@ Grandes Telas: acima de 1200px.
 @media print {
     body {
         background-image: url(../imagens/back-print.jpg);/* Desnecessário */
-
-        
-        
     }
 
     main {
