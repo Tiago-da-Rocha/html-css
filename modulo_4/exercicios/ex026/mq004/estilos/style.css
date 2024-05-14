@@ -22,7 +22,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.674);
-    width: 90vw;
+    max-width: 460px;
     margin: auto;
     margin-top: 15px;
     padding: 10px;

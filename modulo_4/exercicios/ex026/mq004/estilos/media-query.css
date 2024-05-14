@@ -47,7 +47,7 @@ Grandes Telas: acima de 1200px.
     }
 
     main {
-        width: 560px;
+        max-width: 560px;
     }
 
     img#phone { display: none;}
@@ -61,7 +61,7 @@ Grandes Telas: acima de 1200px.
     }
 
     main {
-        width: 660px;
+        max-width: 660px;
     }
 
     img#tablet { display: none;}
@@ -75,7 +75,7 @@ Grandes Telas: acima de 1200px.
     }
 
     main {
-        width: 760px;
+        max-width: 760px;
     }
 
     img#pc { display: none;}
