@@ -16,7 +16,7 @@ html, body {
 /* Definições do corpo do Site */
 
 body {
-    background: url("/imagens/fundo-madeira.jpg") no-repeat top center;
+    background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -31,7 +31,7 @@ main {
 /* configurações do Iphone */
 
 section#iphone {
-    background: url("/imagens/frame-iphone.png") no-repeat;
+    background: url("../imagens/frame-iphone.png") no-repeat;
     height: 627px;
     width: 311px;
 
