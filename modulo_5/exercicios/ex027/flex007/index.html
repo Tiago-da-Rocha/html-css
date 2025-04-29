@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 007</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        .conteiner {
+            background-color: aquamarine;
+            text-align: center;
+            display: flex;
+            
+        }
+
+        .item {
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid rgb(125, 125, 125);
+            flex: auto;
+        }
+
+        .item:hover {
+            background-color: rgb(0, 197, 197);
+            cursor: pointer;
+        }
+
+        #i1 {
+            order: 7;
+        }
+
+        #i2 {
+            order: 6;
+        }
+
+        #i3 {
+            order: 5;
+        }
+
+        #i4 {
+            order: 3;
+        }
+
+        #i5 {
+            order: 1;
+        }
+
+        #i6 {
+            order: 2;
+        }
+
+        #i7 {
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <main class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </main>
+</body>
+</html>

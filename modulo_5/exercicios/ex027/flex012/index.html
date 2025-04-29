@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 012</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        .conteiner {
+            background-color: aquamarine;
+            text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid rgb(125, 125, 125);
+        }
+
+        .item:hover {
+            background-color: rgb(0, 197, 197);
+            cursor: pointer;
+        }
+
+        #item1 {
+            /*flex-basis: 100px;
+            flex-grow: 0;
+            flex-shrink: 0;*/
+
+            flex: 0 1 80px;
+        }
+
+        #item2 {
+            flex: 2 0 80px;
+
+        }
+
+        #item3 {
+            flex: 1 2 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade 'FLEX'</h1>
+    <main class="conteiner">
+        <div class="item" id="item1">A</div>
+        <div class="item" id="item2">B</div>
+        <div class="item" id="item3">C</div>
+    </main>
+</body>
+</html>

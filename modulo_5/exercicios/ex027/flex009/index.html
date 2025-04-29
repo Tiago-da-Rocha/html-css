@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 009</title>
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .conteiner {
+            background-color: aquamarine;
+            text-align: center;
+            display: flex;
+        }
+
+        .item {
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid rgb(125, 125, 125);
+        }
+
+        .item:hover {
+            background-color: rgb(0, 197, 197);
+            cursor: pointer;
+            flex-basis: auto;
+        }
+
+        #c2 .item {
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Basis:</h1>
+
+    <h3>auto;</h3>
+    <main class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D-E-F-G-H-I-J-K-L-M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+    </main>
+
+    <hr>
+
+    <br>
+    <h3>por pixels;</h3>
+    <main class="conteiner" id="c2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D-E-F-G-H-I-J-K-L-M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+    </main>
+</body>
+</html>
