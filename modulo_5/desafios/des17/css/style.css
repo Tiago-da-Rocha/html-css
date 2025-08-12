@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 25vh 10vh 54.1vh 10vh / repeat(3, 1fr);
+    gap: 2px;
+}
+
+#topo {
+    background-color: rgb(61, 3, 3);
+
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+#menu {
+    background-color: rgb(107, 56, 4);
+
+    grid-area: 2 / 1 / span 1 / span 3;
+}
+
+#principal {
+    background-color: rgb(141, 88, 36);
+
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+#secundario {
+    background-color: rgb(192, 99, 7);
+
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+#rodape {
+    background-color: rgb(244, 166, 87);
+
+    grid-area: 4 / 1 / span 1 / span 3;
+}
+
+.caixa {
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
