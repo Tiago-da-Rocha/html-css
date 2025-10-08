@@ -54,6 +54,10 @@ nav#menu a:hover {
     color: var(--destaque);
 }
 
+.escuro {
+    background-color: var(--texto);
+}
+
 main {
     margin-top: 20px;
 
@@ -65,7 +69,7 @@ main {
 section#ficha {
     background-color: var(--fundo-card);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 
     grid-column: 2;
 }
@@ -114,4 +118,193 @@ section#ficha div#social a {
 section#ficha div#social a:hover {
     color: var(--destaque-inverso);
     transition: color 0.5s;
+}
+
+section#detalhes {
+    grid-column: 2;
+}
+
+article {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+article h2 {
+    color: var(--destaque);
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 16/9;
+
+    position: relative;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#skill-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+#skill-container .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skill-container .nome {
+    color: var(--texto);
+    font-weight: bold;
+}
+
+#skill-container .porcent {
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+#skill-container .barra {
+    background-color: var(--fundo-principal);
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--destaque-inverso);
+    transition: height 0.3s, border 0.3s;
+}
+
+#skill-container .barra:hover {
+    cursor: pointer;
+    height: 12px;
+    border-radius: 6px;
+    border: 2px solid var(--destaque);
+}
+
+#skill-container .progresso {
+    background-color: var(--destaque-inverso);
+    height: 100%;
+    border-radius: 4px;
+}
+
+#formacao-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formacao-container .curso {
+    background-color: var(--fundo-principal);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 5px 5px 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border-left 0.5s, padding 0.5s;
+}
+
+#formacao-container .curso:hover {
+    padding-left: 20px;
+    cursor: pointer;
+    border-left: 15px solid var(--destaque);
+}
+
+#formacao-container .periodo {
+    color: var(--texto);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+#formacao-container .instituicao {
+    color: var(--destaque-inverso);
+    font-size: 1.1em;
+    transition: color 0.5s;
+}
+
+#formacao-container .instituicao:hover {
+    color: var(--destaque);
+}
+
+#projeto-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+#projeto-container .projeto {
+    background-color: var(--fundo-principal);
+    padding: 10px 10px 10px 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border-left 0.5s, padding 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#projeto-container .projeto:hover {
+    padding-left: 20px;
+    cursor: pointer;
+    border-left: 15px solid var(--destaque);
+}
+
+#projeto-container .foto {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#projeto-container .foto:hover {
+    border: 2px solid var(--destaque);
+}
+
+@media screen and (min-width: 768px) {
+    #skill-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #projeto-container .projeto {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #projeto-container .projeto-info {
+        max-width: 80%;
+    }
+
+    #projeto-container .foto {
+        max-width: 30%;
+        max-height: 200px;
+    }
+}
+
+footer {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: var(--texto-inverso);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--destaque-inverso);
 }
